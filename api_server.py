@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Implements a simple, non-reliable "todo-list" API server on localhost.
 
