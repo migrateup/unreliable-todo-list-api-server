@@ -117,7 +117,7 @@ def delete_item(item_id):
         store.delete_item(item_id)
     except KeyError:
         flask.abort(404)
-    return 'delete {}'.format(item_id)
+    return ''
 
 if __name__ == '__main__':
     args = get_args()
