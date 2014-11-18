@@ -102,7 +102,7 @@ def create_item():
         )
     return flask.jsonify(**item)
 
-@app.route('/item/<int:item_id>', methods=['GET'])
+@app.route('/items/<int:item_id>', methods=['GET'])
 @unreliable
 def describe_item(item_id):
     try:
@@ -110,7 +110,7 @@ def describe_item(item_id):
     except KeyError:
         flask.abort(404)
 
-@app.route('/item/<int:item_id>', methods=['DELETE'])
+@app.route('/items/<int:item_id>', methods=['DELETE'])
 @unreliable
 def delete_item(item_id):
     try:
