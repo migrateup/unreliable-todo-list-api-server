@@ -2,7 +2,9 @@
 '''
 Implements a simple, non-reliable "todo-list" API server on localhost.
 
-See README.md for context and more information.
+See http://migrateup.com/python-retry-patterns-for-http-apis/ for context and more information.
+
+This software is in the public domain.
 
 '''
 import threading
